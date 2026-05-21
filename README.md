@@ -1,80 +1,38 @@
-# 🍷 El Hato y el Garabato
+# El Hato y el Garabato
 
-**Sitio web oficial de la bodega El Hato y el Garabato** — Arribes del Duero, Salamanca.  
-SPA desarrollada como proyecto fin de ciclo de DAW, reemplazando el WordPress original con una aplicación React moderna, rápida y mantenible.
+Sitio web oficial de la bodega **El Hato y el Garabato**, ubicada en los Arribes del Duero, Salamanca.
 
----
-
-## ✨ Lo que hace el proyecto
-
-| Área | Descripción |
-|------|-------------|
-| **Catálogo de vinos** | Fichas completas con notas de cata, datos analíticos y galería |
-| **Tienda con carrito** | Añadir al carrito con selector de cantidad, resumen de pedido y envío por email |
-| **Blog / Prensa** | Artículos con filtro por categoría, portadas y soporte de vídeo embebido |
-| **Enoturismo** | Página de visitas y experiencias con mapa interactivo (Leaflet) |
-| **i18n ES / EN** | Cambio de idioma en tiempo real sin recarga |
-| **Dark mode** | Tema oscuro con filtro CSS sobre mapa y variables globales |
-| **CMS sin backend** | Contenido gestionado desde Sanity Studio con fallback estático |
+Proyecto desarrollado como trabajo fin de ciclo de Desarrollo de Aplicaciones Web (DAW), con el objetivo de sustituir el sitio anterior por una experiencia moderna, rápida y adaptada a la identidad de la marca.
 
 ---
 
-## 🛠 Stack técnico
+## Sobre el proyecto
 
-```
-React 18 + Vite 5        →  SPA con lazy loading por ruta
-React Router 6           →  Routing client-side
-Framer Motion            →  Animaciones (PageHero parallax, ScrollReveal, StaggerList)
-Sanity v3                →  CMS headless — vinos, blog posts, prensa
-Leaflet + React-Leaflet  →  Mapa interactivo de la bodega
-Formspree                →  Formulario de pedido sin backend propio
-CSS custom (sin Tailwind) →  Variables globales, dark mode nativo
-Vercel                   →  Deploy continuo
-```
+El sitio presenta la bodega, sus vinos y sus experiencias enoturísticas al público en español e inglés, con soporte de modo oscuro y un diseño editorial inspirado en la cultura del vino de calidad.
 
----
+Entre sus funcionalidades principales:
 
-## 🏗 Arquitectura
-
-```
-src/
-├── App.jsx                  # Rutas lazy + Suspense
-├── components/
-│   ├── layout/              # Navbar, Footer, PageHero, Layout
-│   ├── sections/            # Secciones reutilizables por página
-│   └── ui/                  # Button, ScrollReveal, AnimatedDivider…
-├── context/
-│   ├── CartContext.jsx      # Estado global del carrito
-│   └── LanguageContext.jsx  # i18n + tema
-├── data/                    # Fallback estático (vinos, blog, traducciones…)
-├── hooks/                   # useSanityFetch, useScrollReveal, useCursor
-├── lib/
-│   └── queries.js           # GROQ queries para Sanity
-└── pages/                   # Una página por ruta (lazy-loaded)
-```
-
-**Patrón `useSanityFetch`** — carga los datos estáticos de `src/data/` de forma inmediata (sin flash de carga) y los reemplaza silenciosamente con los datos de Sanity cuando llegan. Esto garantiza que la página siempre tenga contenido aunque el CMS tarde o falle.
+- Catálogo de vinos con ficha detallada por botella
+- Tienda con carrito de compra y formulario de pedido
+- Blog de noticias, prensa y artículos de divulgación con filtro por categoría
+- Página de visitas y experiencias en bodega
+- Cambio de idioma (español / inglés) en tiempo real
+- Modo oscuro integrado
+- Mapa interactivo de localización
 
 ---
 
-## 🎨 Diseño
+## Tecnologías utilizadas
 
-- Tipografía: **Cormorant Garamond** (serif elegante) · **Cinzel** (caps) · **Jost** (sans)
-- Paleta cálida: beige `#faf8f3`, dorado `#c8a255`, oscuro `#140d08`
-- Sin frameworks CSS — todo custom con variables CSS
-- Cursor personalizado con trailing suave
-- Animaciones de entrada escalonadas (`StaggerList`) y parallax en heroes
+Aplicación de página única (SPA) construida con **React** y **Vite**, con gestión de contenido a través de un CMS headless y animaciones fluidas en toda la interfaz.
+
+El diseño es completamente personalizado — sin frameworks de estilos — usando tipografías editoriales y una paleta cálida que refleja el territorio y la personalidad de la bodega.
 
 ---
 
-## 🔒 Nota
+## Estado
 
-El código fuente completo está en un repositorio privado.  
-Este repositorio es una presentación pública del proyecto.
+Proyecto académico en fase de producción — DAW, curso 2024-2025.
 
----
-
-## 📄 Licencia
-
-Proyecto académico — DAW, curso 2024-2025.  
-Todos los derechos del contenido (marca, imágenes, textos) pertenecen a Bodega El Hato y el Garabato.
+El código fuente completo se encuentra en un repositorio privado.  
+Todos los derechos del contenido (marca, imágenes y textos) pertenecen a Bodega El Hato y el Garabato.
