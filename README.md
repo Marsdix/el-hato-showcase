@@ -1,107 +1,84 @@
 <div align="center">
 
-# 🍷 El Hato y el Garabato
+# El Hato y el Garabato
+### Memoria Técnica · Diseño de Interfaces Web
 
-**Bodega familiar · Arribes del Duero · Salamanca**
+**Presentación interactiva del Proyecto de Fin de Curso · 2º DAW**
 
-*Sitio web oficial diseñado y desarrollado como proyecto fin de ciclo de DAW*
-
-<br/>
-
-![React](https://img.shields.io/badge/React-SPA-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=20232a)
-![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite&logoColor=white&labelColor=1a1a2e)
-![CMS](https://img.shields.io/badge/CMS-Headless-F03E2F?style=for-the-badge&logo=sanity&logoColor=white&labelColor=1a1a1a)
-![Deploy](https://img.shields.io/badge/Vercel-Deploy-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![i18n](https://img.shields.io/badge/i18n-ES%20%2F%20EN-c8a255?style=for-the-badge&logo=googletranslate&logoColor=white&labelColor=3a2a10)
+![HTML](https://img.shields.io/badge/HTML-Standalone-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=1a1a2e)
+![CSS](https://img.shields.io/badge/CSS-Animations-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=1a1a2e)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live-22272E?style=for-the-badge&logo=github&logoColor=white)
 
 <br/>
 
-> Aplicación de página única que sustituye el sitio WordPress original por una experiencia rápida, editorial y accesible, fiel a la identidad de la bodega.
+**[Ver presentación en vivo →](https://marsdix.github.io/el-hato-showcase/)**
 
 </div>
 
 ---
 
-## 🌿 El proyecto
+## Sobre esta presentación
 
-**El Hato y el Garabato** es una bodega familiar del municipio de Pereña de la Ribera, en los Arribes del Duero. Sus vinos, elaborados con variedades autóctonas como la Rufete, tienen una marcada personalidad de territorio.
+Presentación HTML de 12 diapositivas para la defensa del Proyecto de Fin de Ciclo. Funciona como un PowerPoint interactivo directamente en el navegador — sin frameworks, sin dependencias externas.
 
-Este proyecto nace con el objetivo de reflejar esa identidad en digital: un sitio editorial, cuidado en cada detalle, que funcione tan bien en móvil como en escritorio.
-
----
-
-## ✦ Funcionalidades
-
-<table>
-  <tr>
-    <td align="center" width="160">🍾</td>
-    <td><strong>Catálogo de vinos</strong><br/>Ficha completa por botella: notas de cata visual, olfativa y gustativa, datos analíticos y precio.</td>
-  </tr>
-  <tr>
-    <td align="center">🛒</td>
-    <td><strong>Tienda con carrito</strong><br/>Selector de cantidad, resumen del pedido, subtotales y formulario de contacto para cerrar la compra.</td>
-  </tr>
-  <tr>
-    <td align="center">📰</td>
-    <td><strong>Blog y prensa</strong><br/>Artículos propios y apariciones en medios, con portadas, filtro por categoría y soporte de vídeo.</td>
-  </tr>
-  <tr>
-    <td align="center">🗺️</td>
-    <td><strong>Enoturismo</strong><br/>Página de visitas y experiencias con mapa interactivo de localización de la bodega.</td>
-  </tr>
-  <tr>
-    <td align="center">🌐</td>
-    <td><strong>Bilingüe</strong><br/>Cambio de idioma español / inglés en tiempo real, sin recarga de página.</td>
-  </tr>
-  <tr>
-    <td align="center">🌙</td>
-    <td><strong>Modo oscuro</strong><br/>Tema oscuro completo activable desde la barra de navegación, persistente entre páginas.</td>
-  </tr>
-  <tr>
-    <td align="center">⚡</td>
-    <td><strong>Rendimiento</strong><br/>Carga por rutas bajo demanda, imágenes optimizadas y contenido disponible desde el primer instante.</td>
-  </tr>
-  <tr>
-    <td align="center">📱</td>
-    <td><strong>Diseño responsivo</strong><br/>Adaptado a móvil, tablet y escritorio con navegación en cajón lateral para pantallas pequeñas.</td>
-  </tr>
-</table>
+Cubre la memoria técnica completa del rediseño web de la bodega artesanal **El Hato y el Garabato** (Formariz, Zamora).
 
 ---
 
-## 🎨 Diseño
+## Diapositivas
 
-El diseño es completamente personalizado, sin frameworks de estilos, construido sobre variables CSS globales para garantizar coherencia visual en toda la aplicación.
+| # | Sección | Contenido |
+|---|---|---|
+| 1 | Portada | Título, autor y centro |
+| 2 | Introducción | La bodega, el viñedo y el contexto |
+| 3 | Público objetivo | Segmentación en tres perfiles de usuario |
+| 4 | Arquitectura | Stack JAMstack: Astro 6 + React 18 + Sanity CMS |
+| 5 | Guía de estilo | Paleta cromática, tipografía y texturas |
+| 6 | Diseño UI | Prototipado en Figma — de wireframe a interactivo |
+| 7 | Catálogo de vinos | Tabla con los 7 vinos de autor de la bodega |
+| 8 | Interactividad | Lenis scroll, Framer Motion, cursor personalizado |
+| 9 | Accesibilidad | Auditoría WCAG 2.1 AA con gráficas animadas |
+| 10 | Usabilidad | Heurísticas de Nielsen aplicadas (H2, H5, H8) |
+| 11 | Presupuesto | Estimación económica desglosada por fases |
+| 12 | Conclusiones | Valoración final y acceso al código fuente |
 
-| | |
+---
+
+## Navegación
+
+| Acción | Control |
 |---|---|
-| **Tipografía principal** | Cormorant Garamond — serif editorial para títulos y precios |
-| **Tipografía de caps** | Cinzel — versalitas para etiquetas y navegación |
-| **Tipografía de texto** | Jost — sans-serif limpia para cuerpo y UI |
-| **Color base** | `#faf8f3` — blanco roto cálido |
-| **Acento dorado** | `#c8a255` — inspirado en el color del vino añejo |
-| **Fondo oscuro** | `#140d08` — marrón casi negro para el modo noche |
-
-Las animaciones están pensadas para acompañar el scroll sin entorpecerlo: entradas escalonadas en listas, parallax suave en los heroes de cada sección y transiciones de estado fluidas en el carrito y los botones.
+| Siguiente diapositiva | `→` `Espacio` o botón ▶ |
+| Diapositiva anterior | `←` o botón ◀ |
+| Progreso | Barra dorada superior |
 
 ---
 
-## 📦 Gestión de contenido
+## Técnico
 
-Los vinos, artículos del blog, apariciones en prensa y textos del sitio se gestionan desde un **CMS headless** sin necesidad de tocar código. El sitio muestra el contenido publicado de forma inmediata y dispone de datos de respaldo para garantizar que siempre hay información visible, incluso sin conexión al CMS.
+Presentación HTML standalone. Un único archivo `index.html` + carpeta `fotos/`. No requiere servidor, build ni instalación — se abre directamente en el navegador.
+
+- Animaciones CSS (`textFadeIn`, `imageSlideInLeft`) con reset al volver a una diapositiva
+- Proporción exacta 16:9 (`1280×720 px`) con escala automática
+- Navegación por teclado completa
+- Barras de gráficos animadas con CSS transitions (diapositiva 9)
+- Tipografías: Cinzel · Cormorant Garamond · Jost (Google Fonts)
+
+---
+
+## Repositorio principal
+
+El código fuente completo del sitio web está en:
+
+**[github.com/Marsdix/El-Hato-y-el-Garabato](https://github.com/Marsdix/El-Hato-y-el-Garabato)**
 
 ---
 
 <div align="center">
 
-### 🔒 Repositorio privado
+*CIFP La Laboral · Gijón, Asturias · 2025–2026*
+*Guillermo Jesus Martin Perez · DAW 2º curso*
 
-El código fuente completo se encuentra en un repositorio privado.  
-Este espacio es únicamente una presentación pública del proyecto.
-
-<br/>
-
-*Proyecto académico — DAW 2024-2025*  
 *Todos los derechos del contenido (marca, imágenes y textos) pertenecen a Bodega El Hato y el Garabato*
 
 </div>
