@@ -552,7 +552,7 @@
       .progress-indicator-fill {
         height: 100%;
         background-color: var(--color-oro);
-        width: 8.33%;
+        width: 7.69%;
         transition: width 0.3s ease;
       }
     </style>
@@ -1262,6 +1262,27 @@
           </div>
         </div>
 
+        <!-- DIAPOSITIVA 13: QR CODE -->
+        <div class="slide" id="slide-13">
+          <div class="slide-header">
+            <span class="slide-title">12 / Proyecto en Línea</span>
+            <span class="slide-meta">Acceso Directo</span>
+          </div>
+          <div class="slide-body" style="justify-content: center">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 30px; width: 100%" class="animate-fade">
+              <h3 style="font-family: var(--font-serif-cuerpo); font-size: 28px; font-weight: 400; font-style: italic; color: var(--color-tierra); text-align: center">
+                Escanea para visitar el sitio web
+              </h3>
+              <div style="border: 1px solid var(--color-oro); padding: 16px; background: var(--color-blanco); box-shadow: var(--shadow-premium); display: inline-flex">
+                <img src="fotos/QR Pagina.png" alt="QR Código - El Hato y el Garabato" style="width: 220px; height: 220px; object-fit: contain; display: block" />
+              </div>
+              <p style="font-family: var(--font-sans); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-oro-oscuro); font-weight: 500; text-align: center">
+                El Hato y el Garabato · Bodega Ecológica · Arribes del Duero
+              </p>
+            </div>
+          </div>
+        </div>
+
         <!-- DIAPOSITIVA 12: CONCLUSIÓN -->
         <div class="slide" id="slide-12">
           <div class="slide-header">
@@ -1352,7 +1373,7 @@
         <div class="footer-branding">
           <span
             >El Hato y el Garabato · Diapositiva
-            <strong id="slideCounter">1</strong> de 12</span
+            <strong id="slideCounter">1</strong> de 13</span
           >
         </div>
         <div class="footer-navigation">
@@ -1378,7 +1399,7 @@
     <!-- Script Controlador de Diapositivas Interactivas -->
     <script>
       let activeSlideIndex = 1;
-      const maxSlidesCount = 12;
+      const maxSlidesCount = 13;
 
       function updateSlide() {
         for (let i = 1; i <= maxSlidesCount; i++) {
